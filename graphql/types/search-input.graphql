@@ -1,0 +1,4 @@
+input SearchInput {
+	documents: [String]
+	query: String
+}

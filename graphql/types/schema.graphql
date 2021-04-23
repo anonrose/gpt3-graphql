@@ -1,7 +1,9 @@
 # import Complete from 'complete.graphql'
 # import Search from 'search.graphql'
+# import CompleteInput from 'complete-input.graphql'
+# import SearchInput from 'search-input.graphql'
 
 type Query {
-	complete: [Complete]
-	search: [Search]
+	complete(completion_input: CompleteInput): Complete
+	search(search_input: SearchInput): [Search]
 }
