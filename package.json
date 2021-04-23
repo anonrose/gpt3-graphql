@@ -1,0 +1,26 @@
+{
+  "name": "gpt3-graphql",
+  "version": "1.0.0",
+  "description": "a graphql API for gpt3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anonrose/gpt3-graphql.git"
+  },
+  "keywords": [
+    "gpt3",
+    "graphql"
+  ],
+  "author": "Kyle Rose[email@kylerose.io]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anonrose/gpt3-graphql/issues"
+  },
+  "homepage": "https://github.com/anonrose/gpt3-graphql#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
