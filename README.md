@@ -15,8 +15,7 @@
 2. Deploy this repo to heroku if you want using the above button, or anywhere, this is just an express server
 
 3. Set your env vars:
-	```GPT3_CLIENT_ID```
-	```GPT3_CLIENT_SECRET```
+	```OPENAI_API_KEY```
 
 4. If you want to view the [graphiql](https://github.com/graphql/graphiql) interface, set the ```SHOW_GRAPHIQL``` env var to anything and visit the `/graphql` route
 

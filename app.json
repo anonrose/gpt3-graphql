@@ -1,0 +1,8 @@
+{
+  "name": "GPT 3 Self Hosted",
+  "description": "Your own instance of a gpt3 graphql server",
+  "repository": "https://github.com/anonrose/alpaca.graphql",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "gpt3", "graphql"],
+  "image": "heroku/nodejs"
+}
