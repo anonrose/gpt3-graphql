@@ -4,7 +4,7 @@ const { graphqlHTTP } = require('express-graphql');
 const { GraphQLFileLoader } = require('@graphql-tools/graphql-file-loader');
 const { loadSchema } = require('@graphql-tools/load');
 const { addResolversToSchema } = require('@graphql-tools/schema');
-const resolvers = require('./src/graphql/resolvers');
+const resolvers = require('./graphql/resolvers');
 const OpenAI = require('openai-api');
 const PORT = process.env.PORT || 3000;
 
@@ -14,7 +14,7 @@ const key = process.env.OPENAI_API_KEY;
 
 
 (async () => {
-  const schema = await loadSchema('./src/graphql/types/*.graphql', { // load from multiple files using glob
+  const schema = await loadSchema('./graphql/types/*.graphql', { // load from multiple files using glob
     loaders: [
       new GraphQLFileLoader()
     ]
@@ -30,7 +30,7 @@ const key = process.env.OPENAI_API_KEY;
     if (access_token) {
       req.openai = new OpenAI(access_token);
     } else {
-      return res.status(403).send(`authorization denied: neither Authorization header set nor OPENAI_API_KEY env var not set, one of these must be set to access the API`);
+      return res.status(403).send(`authorization denied: neither Authorization header set nor OPENAI_API_KEY env var set, one of these must be set to access the API`);
     }
     next();
   });

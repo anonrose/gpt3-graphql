@@ -1,0 +1,10 @@
+# import Choices from 'choices.graphql'
+
+
+type Complete {
+	id: String,
+	object: String
+	created: Int
+	model: String
+	choices: [Choices]
+}

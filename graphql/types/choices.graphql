@@ -1,0 +1,7 @@
+type Choices {
+	text: String
+	index: Int
+	logprobs: Int
+	finish_reason: String
+}
+

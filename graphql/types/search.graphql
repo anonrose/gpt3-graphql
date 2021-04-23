@@ -1,0 +1,6 @@
+type Search {
+	document: Int
+	object: String
+	score: Float
+}
+

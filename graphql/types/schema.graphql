@@ -1,0 +1,7 @@
+# import Complete from 'complete.graphql'
+# import Search from 'search.graphql'
+
+type Query {
+	complete: [Complete]
+	search: [Search]
+}
