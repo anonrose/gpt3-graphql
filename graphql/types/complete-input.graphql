@@ -1,7 +1,7 @@
 input CompleteInput {
 	prompt:String
 	max_tokens: Int
-	temperature: Int
+	temperature: Float
 	top_p: Int
 	n: Int
 	stream: Boolean
